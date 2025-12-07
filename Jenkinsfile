@@ -15,7 +15,8 @@ pipeline {
         stage('Clone Repository') {
             steps {
                 // Clean workspace before cloning (optional)
-                deleteDir()
+                // deleteDir()
+                cleanWs() 
 
                 // Clone the Git repository
                 git branch: 'main',
