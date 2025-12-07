@@ -4,7 +4,7 @@ Description: 'CFN for creating an S3 bucket for nested stack templates and apply
 Parameters:
   S3BucketName:
     Type: String
-    Default: 'ct-cfnn-filess-for-stack'
+    Default: 'gaspi-new-bucket'
 
 Resources:
 #####################################
