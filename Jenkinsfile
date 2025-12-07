@@ -30,7 +30,7 @@ pipeline {
                 withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', credentialsId: 'aws-crendentails-jenkinsadmin']]) {
                     dir('infrastructure') {
                         sh "aws cloudformation deploy --stack-name cfn-s3bucket --template-file create-cfn-template-bucket.yaml --region 'us-east-1' --capabilities CAPABILITY_IAM"
-                        sh "aws s3 cp ../ s3://ct-cfn-files-for-stack-1/ --recursive"
+                        sh "aws s3 cp ../ s3://gaspi-new-bucket/ --recursive"
                     }
                 }
             }
