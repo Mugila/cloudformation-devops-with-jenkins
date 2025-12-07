@@ -20,7 +20,7 @@ pipeline {
 
                 // Clone the Git repository
                 git branch: 'main',
-                    url: 'https://github.com/chinmayto/cloudformation-devops-with-jenkins.git'
+                    url: 'https://github.com/Mugila/cloudformation-devops-with-jenkins.git'
 
                 sh "ls -lart"
             }
