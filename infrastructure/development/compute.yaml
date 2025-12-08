@@ -59,7 +59,7 @@ Resources:
       LaunchTemplateName: !Sub "${Environment}-launch-template"
       LaunchTemplateData:
         InstanceType: !Ref InstanceType
-        KeyName: WorkshopKeyPair
+        KeyName: devops
         IamInstanceProfile:
           Name: !Ref IAMInstanceProfile
         ImageId: ami-0fa3fe0fa7920f68e
