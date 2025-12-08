@@ -100,8 +100,8 @@ Resources:
         LaunchTemplateId: !Ref LaunchTemplate
         Version: !GetAtt LaunchTemplate.LatestVersionNumber
       MinSize: 1
-      MaxSize: 3
-      DesiredCapacity: 3
+      MaxSize: 1
+      DesiredCapacity: 1
       Tags:
         - Key: Name
           Value: !Sub "${Environment}-ec2-instance"
